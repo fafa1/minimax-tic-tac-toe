@@ -21,7 +21,7 @@ gameWon é setado como null inicialmente, se houver um ganhador o gameWon recebe
 jogador(X ou O)
 -------
 As observações
-Na funçao turn o gameOver só é chamada com existe um gameWon ou seja um ganhador, passando o indice
+Na funçao turn o gameOver só é chamada quando existe um gameWon ou seja um ganhador, passando o indice
 e o player ganhador.
 -------
 
