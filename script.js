@@ -12,6 +12,7 @@ const winCombos = [
 	[6, 4, 2]
 ]
 
+// Obtenho todas as celulas
 const cells = document.querySelectorAll('.cell');
 startGame();
 
@@ -26,6 +27,7 @@ function startGame() {
 }
 
 function turnClick(square) {
+	
 	if (typeof origBoard[square.target.id] == 'number') {
 		turn(square.target.id, huPlayer)
 		if (!checkWin(origBoard, huPlayer) && !checkTie()) turn(bestSpot(), aiPlayer);
@@ -40,11 +42,12 @@ function turn(squareId, player) {
 }
 
 function checkWin(board, player) {
+
 	let plays = board.reduce((a, e, i) =>
 		(e === player) ? a.concat(i) : a, []);
 	let gameWon = null;
 	for (let [index, win] of winCombos.entries()) {
-		if (win.every(elem => plays.indexOf(elem) > -1)) {
+		if (win.every(elem => plays.indexOf(elem) >-1)) {
 			gameWon = {index: index, player: player};
 			break;
 		}
