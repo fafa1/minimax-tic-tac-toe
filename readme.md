@@ -1,6 +1,6 @@
-Algoritmo Minimax
+## Algoritmo Minimax
 ----
-função starGame -> Reinicia o tabuleiro, percorrendo cada celula, limpado todas as cores e 
+**função starGame ** -> Reinicia o tabuleiro, percorrendo cada celula, limpado todas as cores e 
 setando os espaços vazios
 origBoard tem o indice e o numero de cada posição da célula
 
@@ -61,8 +61,11 @@ jogada se for o aiPlayer é atribuido um maior valor que é +10, setando inicial
 muito pequeno, se for o huPlayer é atribuido um menor valor -10. A verificaçao é feita 
 de baixo pra cima e a parti da esquerda da árvore.
 
-Links:
-https://medium.freecodecamp.org/how-to-make-your-tic-tac-toe-game-unbeatable-by-using-the-minimax-algorithm-9d690bad4b37
+##Links:
 
+###### Texto
+(https://medium.freecodecamp.org/how-to-make-your-tic-tac-toe-game-unbeatable-by-using-the-minimax-algorithm-9d690bad4b37)
 
-https://www.youtube.com/watch?v=P2TcQ3h0ipQ
+###### Video Eplicação
+
+(https://www.youtube.com/watch?v=P2TcQ3h0ipQ)
