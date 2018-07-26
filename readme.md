@@ -23,7 +23,10 @@ jogador(X ou O)
 As observações
 Na funçao turn o gameOver só é chamada quando existe um gameWon ou seja um ganhador, passando o indice
 e o player ganhador.
+move.index = guardo a posição vazia para que mais tarde eu possa usa-la para voltar ao estado inicial.
 
+jogador "X" esta jogando, entra no IF chamando a vez do humano jogar, mas X espera o retorno da sua 
+chamada
 
 - função gameOver = > nessa primeira interação é para verificar o index(posição) do wimCombos, que possui
 os estados vencedores, exemplo: qual foi o indice do estado terminal(vencedor) foi encontrado(match)
