@@ -1,5 +1,5 @@
 Algoritmo Minimax
-
+----
 função starGame -> Reinicia o tabuleiro, percorrendo cada celula, limpado todas as cores e 
 setando os espaços vazios
 origBoard tem o indice e o numero de cada posição da célula
@@ -19,11 +19,11 @@ Logo adiante é chamada a função "gameOver"  passando gameWon como parametro q
 função checkWin -> plays recebe todos os indices que o jogador jogou , Para que assim possa ser possível verificar se as celulas jogadas pelo huPlayer esta entre os estados de vitória(winCombos),
 gameWon é setado como null inicialmente, se houver um ganhador o gameWon recebe o indice e o 
 jogador(X ou O)
--------
+
 As observações
 Na funçao turn o gameOver só é chamada quando existe um gameWon ou seja um ganhador, passando o indice
 e o player ganhador.
--------
+
 
 função gameOver = > nessa primeira interação é para verificar o index(posição) do wimCombos, que possui
 os estados vencedores, exemplo: qual foi o indice do estado terminal(vencedor) foi encontrado(match)
@@ -63,4 +63,6 @@ de baixo pra cima e a parti da esquerda da árvore.
 
 Links:
 https://medium.freecodecamp.org/how-to-make-your-tic-tac-toe-game-unbeatable-by-using-the-minimax-algorithm-9d690bad4b37
+
+
 https://www.youtube.com/watch?v=P2TcQ3h0ipQ

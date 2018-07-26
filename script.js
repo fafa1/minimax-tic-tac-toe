@@ -123,8 +123,8 @@ function minimax(novoTabuleiro, jogador) {
 	}
 
 	var bestMove;
-	if(jogador === jogadorIa) {
-		var bestScore = -10000;
+	if (jogador === jogadorIa) {
+		var bestScore = -100;
 		for(var i = 0; i < moves.length; i++) {
 			if (moves[i].score > bestScore) {
 				bestScore = moves[i].score;
@@ -132,7 +132,7 @@ function minimax(novoTabuleiro, jogador) {
 			}
 		}
 	} else {
-		var bestScore = 10000;
+		var bestScore = 100;
 		for(var i = 0; i < moves.length; i++) {
 			if (moves[i].score < bestScore) {
 				bestScore = moves[i].score;
